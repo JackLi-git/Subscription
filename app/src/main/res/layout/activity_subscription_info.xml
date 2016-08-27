@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    tools:context=".activity.SubscriptionInfoActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/setting_subscription_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:background="@color/colorToolbar"
+        android:theme="@style/ToolbarTheme">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/setting_sub_icon_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:id="@+id/setting_sub_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:text="订阅号名字"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="功能介绍"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/setting_sub_desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text="订阅功能"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_sub_newnotice_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:background="@drawable/selector_linearlayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="新消息通知"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <CheckBox
+                android:id="@+id/setting_sub_newnotive_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_sub_message_recored_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:background="@drawable/selector_linearlayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="查看历史消息"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/setting_sub_into_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_into_subscription_bg"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="进入公众号"
+            />
+
+    </LinearLayout>
+</LinearLayout>

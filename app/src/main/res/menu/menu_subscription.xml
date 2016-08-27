@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/sub_no_longer_focus"
+        android:title="不再关注"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/sub_delete"
+        android:title="清除消息"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/sub_cancel"
+        android:title="取消"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
